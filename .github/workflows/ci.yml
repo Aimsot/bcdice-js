@@ -7,7 +7,6 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
-
     strategy:
       matrix:
         node-version:
@@ -24,7 +23,7 @@ jobs:
         registry-url: https://registry.npmjs.org/
     - uses: ruby/setup-ruby@v1
       with:
-        ruby-version: 2.7.0
+        ruby-version: 3.2
         bundler-cache: true
     - run: npm ci
     - run: npm run clean
@@ -32,8 +31,3 @@ jobs:
     - run: npm run lint
     - run: npm test
     - run: npm run example
-
-    - run: npm publish
-      if: ${{ matrix.node-version == 'current' && startsWith(github.ref, 'refs/tags/v') }}
-      env:
-        NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
