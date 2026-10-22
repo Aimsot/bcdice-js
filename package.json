@@ -73,32 +73,31 @@
   },
   "overrides": {
     "@eslint/eslintrc": {
-      "js-yaml": "4.1.1"
+      "js-yaml": "4.3.2"
     },
     "@isaacs/brace-expansion": "5.0.1",
     "@typescript-eslint/typescript-estree": {
       "minimatch": "9.0.9"
     },
-    "brace-expansion@2.0.2": "2.0.3",
     "cross-spawn": "7.0.6",
     "eslint": {
-      "ajv": "6.14.0",
+      "ajv": "6.15.0",
       "minimatch": {
         ".": "3.1.5",
-        "brace-expansion": "1.1.13"
+        "brace-expansion": "1.1.21"
       }
     },
     "eslint-plugin-import": {
       "minimatch": {
         ".": "3.1.5",
-        "brace-expansion": "1.1.13"
+        "brace-expansion": "1.1.21"
       }
     },
     "flat-cache": {
-      "flatted": "3.4.2"
+      "flatted": "3.4.4"
     },
     "fdir": {
-      "picomatch": "4.0.4"
+      "picomatch": "4.0.7"
     },
     "micromatch": {
       "picomatch": "2.3.2"
@@ -108,7 +107,7 @@
     "mocha": {
       "diff": "8.0.4",
       "glob": "10.5.0",
-      "js-yaml": "4.1.1",
+      "js-yaml": "4.3.2",
       "minimatch": "9.0.9",
       "serialize-javascript": "7.0.5"
     },
@@ -119,7 +118,7 @@
       "cross-spawn": "6.0.6",
       "minimatch": {
         ".": "3.1.5",
-        "brace-expansion": "1.1.13"
+        "brace-expansion": "1.1.21"
       },
       "semver": "5.7.2"
     },
@@ -128,10 +127,15 @@
       "diff": "4.0.4"
     },
     "tinyglobby": {
-      "picomatch": "4.0.4"
+      "picomatch": "4.0.7"
     },
     "ts-node": {
       "diff": "4.0.4"
-    }
+    },
+    "shell-quote": "^1.12.0",
+    "fast-uri": "^3.1.9",
+    "brace-expansion@^2.0.0": "2.1.7",
+    "brace-expansion@^5.0.0": "5.0.12",
+    "@humanfs/node": "^0.16.8"
   }
 }

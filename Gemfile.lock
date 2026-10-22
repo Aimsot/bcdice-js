@@ -9,11 +9,12 @@ GEM
   remote: https://rubygems.org/
   specs:
     ast (2.4.3)
-    concurrent-ruby (1.3.6)
+    base64 (0.3.0)
+    concurrent-ruby (1.3.8)
     docile (1.4.1)
     i18n (1.8.11)
       concurrent-ruby (~> 1.0)
-    json (2.18.0)
+    json (2.21.2)
     language_server-protocol (3.17.0.5)
     nkf (0.2.0)
     opal (1.7.4)
@@ -58,13 +59,14 @@ GEM
       power_assert
     tomlrb (2.0.4)
     unicode-display_width (2.6.0)
-    yard (0.9.38)
+    yard (0.9.45)
 
 PLATFORMS
   ruby
-  x64-mingw32
+  x64-mingw-ucrt
 
 DEPENDENCIES
+  base64
   bcdice!
   nkf (~> 0.2.0)
   opal (~> 1.7.4)
@@ -77,4 +79,4 @@ DEPENDENCIES
   yard (~> 0.9.34)
 
 BUNDLED WITH
-   2.1.4
+   2.7.1
